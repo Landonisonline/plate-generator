@@ -1,0 +1,45 @@
+body {
+    font-family: 'Bebas Neue', sans-serif;background-color: #e9e9e9;
+    text-align: center;
+    color: #000000;
+    }
+
+.plate-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plate-img {
+    width: 1000px;
+}
+
+.plate-text {
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    font-size: 280px;
+}
+
+.button-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button-content {
+    color: #ffffff;
+    width: 270px;
+    font-size: 50px;
+    background-color: #00ffff;
+    cursor: pointer;
+    padding: 20px 20px;
+    border: 5px #ffffff;
+    border-radius: 5px;
+}
+
+.button-content:hover {
+    background-color: #00e0e0;
+}
