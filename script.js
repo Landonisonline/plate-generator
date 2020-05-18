@@ -27,13 +27,34 @@ function makePlate() {
 }
 
 // unfinished
+var count = 0;
 
-function nextPlate(index) {
-    var myPlate[index] = ["/images/palmtree-plate.PNG", "/images/resonate-plate.PNG",
-        "/images/blank-plate.PNG"];
+const myPlate = ["/images/palmtree-plate.PNG", "/images/resonate-plate.PNG", "images/paw-plate.PNG", "images/location-plate.PNG", "images/flower-plate.PNG", "images/camera-plate.PNG"]
 
-    for (i = 0, i < 3, i++) {
-        document.querySelector(".plate-img").innerHTML = `${myPlate[i]}`;
-    }
+document.querySelector(".plate-img").src = `${myPlate[count]}`;
+
+function incrementByOne() {
+
+    if (count == 5) {
+        count = 0;
+    } else {
+        count++;
+    };
+
+    document.querySelector(".plate-img").src = `${myPlate[count]}`;
 
 }
+
+
+
+
+// const myPlate[counter] = ["/images/palmtree-plate.PNG", "/images/resonate-plate.PNG",
+//         "/images/blank-plate.PNG"];
+
+//     document.querySelector(".plate-img").src = `${myPlate[counter]}`;
+
+//     if (counter !== 4) {
+//         counter = counter + 1;
+//     } else {
+//         counter = 0;
+//     }

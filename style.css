@@ -1,5 +1,11 @@
+html {
+    height: 100%;
+}
+
 body {
-    font-family: 'Bebas Neue', sans-serif;background-color: #e9e9e9;
+    font-family: 'Bebas Neue', sans-serif;
+    /* background-color: #e9e9e9; */
+    background-image: linear-gradient(#ffffff, #d6d6d6);
     text-align: center;
     color: #000000;
     }
@@ -31,15 +37,24 @@ body {
 
 .button-content {
     color: #ffffff;
-    width: 270px;
+    width: 300px;
     font-size: 50px;
     background-color: #00ffff;
     cursor: pointer;
-    padding: 20px 20px;
+    user-select: none;
+    padding: 20px 15px;
     border: 5px #ffffff;
     border-radius: 5px;
 }
 
 .button-content:hover {
     background-color: #00e0e0;
+}
+
+.no-select {
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select:none; 
+    user-select:none;
+    -o-user-select:none;
 }
