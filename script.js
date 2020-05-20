@@ -1,3 +1,6 @@
+
+// random letters code
+
 function makeLetters(length) {
     var result = '';
     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -8,7 +11,6 @@ function makeLetters(length) {
     // return result;
     document.querySelector(".js-1").innerHTML = result;
 }
-
 
 function makeNumbers(length) {
     var result = '';
@@ -21,12 +23,32 @@ function makeNumbers(length) {
     document.querySelector(".js-2").innerHTML = result;
 }
 
-function makePlate() {
-    makeLetters(3);
-    makeNumbers(3);
+function makeDash() {
+    document.querySelector(".dash").innerHTML = "-";
 }
 
-// unfinished
+function makePlate() {
+    makeLetters(3);
+    makeDash();
+    makeNumbers(3);
+
+}
+
+// vanity plate code
+function customPlate() {
+
+    document.querySelector(".js-1").innerHTML = "";
+
+    document.querySelector(".js-2").innerHTML = "";
+
+    document.querySelector(".dash").innerHTML = "";
+
+    document.querySelector(".js-1").innerHTML = document.querySelector(".field").value;
+}
+
+
+
+// change background code
 var count = 0;
 
 const myPlate = ["/images/palmtree-plate.PNG", "/images/resonate-plate.PNG", "images/paw-plate.PNG", "images/location-plate.PNG", "images/flower-plate.PNG", "images/camera-plate.PNG"]
@@ -44,17 +66,3 @@ function incrementByOne() {
     document.querySelector(".plate-img").src = myPlate[count];
 
 }
-
-
-
-
-// const myPlate[counter] = ["/images/palmtree-plate.PNG", "/images/resonate-plate.PNG",
-//         "/images/blank-plate.PNG"];
-
-//     document.querySelector(".plate-img").src = `${myPlate[counter]}`;
-
-//     if (counter !== 4) {
-//         counter = counter + 1;
-//     } else {
-//         counter = 0;
-//     }

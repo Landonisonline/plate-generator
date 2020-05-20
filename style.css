@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bebas Neue', Arial;
     /* background-color: #e9e9e9; */
     background-image: linear-gradient(#ffffff, #d6d6d6);
     text-align: center;
@@ -57,4 +57,16 @@ body {
     -ms-user-select:none; 
     user-select:none;
     -o-user-select:none;
+}
+
+.input-section {
+    color: #ffffff;
+    background-color: #00ffff;
+    font-size: 25px;
+    padding: 15px 15px;
+    border-radius: 5px;
+}
+
+.input-container p {
+    padding-bottom: 10px;
 }

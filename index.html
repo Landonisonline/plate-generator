@@ -13,9 +13,10 @@
 
 <body>
     <section class="plate-section">
-        <div class="plate-container">
+        <div class="plate-container no-select">
             <img src="" class="plate-img" alt="">
-            <p class="plate-text"><span class="js-1">LAN</span>-<span class="js-2">DON</span></p>
+            <p class="plate-text"><span class="js-1">LAN</span><span class="dash"></span><span class="js-2">DON</span>
+            </p>
         </div>
     </section>
 
@@ -23,6 +24,14 @@
         <div class="button-container">
             <p class="button-content no-select" onclick="makePlate()">Generate Plate</p>
         </div>
+
+        <div class="input-section">
+            <div class="input-container">
+                <p>Vanity Plate</p> <input type="text" class="field" maxlength="7"> <button
+                    onclick="customPlate()">OK</button>
+            </div>
+        </div>
+
         <div class="button-container">
             <p class="button-content next-button no-select" onclick="incrementByOne()">Next Background</p>
         </div>
