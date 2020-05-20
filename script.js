@@ -41,7 +41,7 @@ function incrementByOne() {
         count++;
     };
 
-    document.querySelector(".plate-img").src = `${myPlate[count]}`;
+    document.querySelector(".plate-img").src = myPlate[count];
 
 }
 
